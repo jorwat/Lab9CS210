@@ -1,5 +1,8 @@
 package ui;
 
+import model.Accessory;
+import model.Clothing;
+
 public class Main {
     public static void main(String[] args) {
         Clothing uniform = new Clothing("uniform");
@@ -8,11 +11,11 @@ public class Main {
         Clothing jacket = new Clothing("jacket");
         Accessory nametag = new Accessory("name tag");
         Accessory scarf = new Accessory("scarf");
-        uniform.add(belt);
-        uniform.add(jacket);
-        jacket.add(nametag);
-        jacket.add(scarf);
-        uniform.add(apron);
+        uniform.addWearable(belt);
+        uniform.addWearable(jacket);
+        jacket.addWearable(nametag);
+        jacket.addWearable(scarf);
+        uniform.addWearable(apron);
         uniform.display("Barista");
     }
 }
