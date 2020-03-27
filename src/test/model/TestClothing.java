@@ -40,7 +40,7 @@ class TestClothing {
         worn.add("clothing on ");
         Accessory a = new Accessory("accessory");
         worn.add("accessory on clothing");
-        c.addWearable(a);
+        c.add(a);
         c.display("");
         assertEquals(worn, Printer.getPrinted());
     }
@@ -51,7 +51,7 @@ class TestClothing {
         worn.add("clothing on ");
         Clothing c2 = new Clothing("clothing");
         worn.add("clothing on clothing");
-        c.addWearable(c2);
+        c.add(c2);
         c.display("");
         assertEquals(worn, Printer.getPrinted());
     }

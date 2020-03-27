@@ -17,7 +17,7 @@ public class Clothing extends Wearable {
 
     // MODIFIES: this
     // EFFECTS: adds a wearable item to the composite
-    public void addWearable(Wearable w) {
+    public void add(Wearable w) {
         wearables.add(w);
     }
 
